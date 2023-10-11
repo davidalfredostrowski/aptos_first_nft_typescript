@@ -16,6 +16,63 @@ cd ~/aptos-core/ecosystem/typescript/sdk/examples/typescript
 pnpm install
 pnpm run simple_aptos_token
 
+ ts-test@1.0.0 simple_aptos_token /home/ubuntu/aptos-core/ecosystem/typescript/sdk/examples/typescript
+> ts-node simple_aptos_token.ts
+
+=== Addresses ===
+Alice: 0x1a756a34034c3a5804b12acbfa3e5cb387bed0036f25fcb8f62f559c1455a477
+Bob: 0x328ecc1417e90f611a125c247e29309083a8aeb535d205d1c906b25304a2b8f1
+
+=== Initial Coin Balances ===
+Alice: 100000000
+Bob: 100000000
+
+=== Creating Collection and Token ===
+0xcb9851dad4f404b4b142ffabc4a08044b04519ea0338b1ac28d5a51816c64196
+Alice's collection: {
+    "collection_id": "0x391c43473107f5500a5bc81e676390b3ab0fa1dfdb8c03b5dd09e7649259e99f",
+    "token_standard": "v2",
+    "collection_name": "Alice's",
+    "creator_address": "0x1a756a34034c3a5804b12acbfa3e5cb387bed0036f25fcb8f62f559c1455a477",
+    "current_supply": 1,
+    "description": "Alice's simple collection",
+    "uri": "https://alice.com"
+}
+Alice's token balance: 1
+Alice's token data: {
+    "token_data_id": "0x4e9b5a21dff05791d7681dccc5c4170657813071db0129f2dfbd7b77a5d5dffc",
+    "token_name": "Alice's first token",
+    "token_uri": "https://aptos.dev/img/nyan.jpeg",
+    "token_properties": {},
+    "token_standard": "v2",
+    "largest_property_version_v1": null,
+    "maximum": null,
+    "is_fungible_v2": false,
+    "supply": 0,
+    "last_transaction_version": 4341546,
+    "last_transaction_timestamp": "2023-10-11T20:24:20.227493",
+    "current_collection": {
+        "collection_id": "0x391c43473107f5500a5bc81e676390b3ab0fa1dfdb8c03b5dd09e7649259e99f",
+        "collection_name": "Alice's",
+        "creator_address": "0x1a756a34034c3a5804b12acbfa3e5cb387bed0036f25fcb8f62f559c1455a477",
+        "uri": "https://alice.com",
+        "current_supply": 1
+    }
+}
+
+=== Transferring the token to Bob ===
+Alice's token balance: 0
+Bob's token balance: 1
+
+=== Transferring the token back to Alice ===
+Alice's token balance: 1
+Bob's token balance: 0
+
+=== Getting Alices's NFTs ===
+Alice current token ownership: 1. Should be 1
+
+=== Getting Bob's NFTs ===
+Bob current token ownership: 0. Should be 0
 
 
 
